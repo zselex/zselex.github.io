@@ -28,7 +28,7 @@ input[type=text]{
   background-image: url("../images/name.png");
   background-size: 30 30;
   background-repeat: no-repeat;
-  background-position: 5% 40%;
+  background-position: 5% 50%;
 }
 
 legend{
@@ -73,20 +73,33 @@ input[type=password]:focus{
 
 .checkboxlabel{
   margin: 10px 70px;
+  padding-top: 5px;
   display: inline-block;
   vertical-align: middle;
+  position: relative;
+}
+
+.checkboxlabel p{
+  line-height: 2;
+  display: inline;
+  margin-left: 5px;
 }
 
 .check{
   width: 35px;
   height: 35px;
-  margin: 0 10px 0 0;
+  margin: 0 7px 0 0;
   padding-bottom: 5px;
+  float: left;
+  opacity : 0;
+
 }
 
+
+
 body{
-  background-image: url("http://lorempixel.com/g/1920/1080/abstract");
-  background-size: 1920 1080;
+  background-image: url("../images/back.png"), url("http://lorempixel.com/g/1920/1080");
+  background-size: 3 3, 1920 1080;
   font-family: 'Raleway', sans-serif;
 
 }
@@ -113,4 +126,30 @@ body{
 .btn:hover {
   background: #873400;
   text-decoration: none;
+}
+
+
+
+.fake{
+  float: left;
+  width: 35px;
+  height: 35px;
+  background-color: #67b5e9;
+  margin: -1px -40px;
+  transition: background .5s ease;
+  position: absolute,
+  ;
+
+
+}
+
+input:checked + .fake:before {
+  content: url(../images/check.png);
+
+}
+
+input:checked + .fake {
+
+  background-color: rgba(255, 0, 0, 0.0);
+
 }
