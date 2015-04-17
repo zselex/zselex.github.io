@@ -18,6 +18,10 @@ body{
 
 }
 
+.clearfix{
+	clear: both;
+}
+
 /*HEADER*/
 
 header{
@@ -130,18 +134,28 @@ main{
   box-sizing: border-box;
 }
 
+.content:before{
+	content: ".";
+	position: absolute;
+	background-color: #E9EBF4;
+	top: 0;
+	bottom: 0;
+	z-index:1;
+	width: 230px;
+}
+
 aside{
-  background-color: #E9EBF4;
   width: 230px;
-  margin-right: -280px;
+  /*margin-right: -280px;*/
   float: left;
   position: relative;
+	z-index:2;
 }
 
 .content{
-  width: 630px;
-  float: left;
-  border-left: 280px solid #E9EBF4;
+  /*width: 630px;*/
+  float: right;
+  /*border-left: 280px solid #E9EBF4;*/
   padding: 0 30px 0 30px;
 }
 
@@ -279,53 +293,4 @@ aside h1{
 aside p{
   line-height: 1.2;
   margin-bottom: 15px;
-}
-
-
-
-@media (max-width: 960px){
-	  aside {
-	    display: none;
-	  }
-
-		.headwrapper h1{
-		margin-left: 50px;
-		}
-
-	  .content {
-	  border: 0 solid white;
-	  }
-		.menu ul{
-			margin-left: 45px;
-			width: auto;
-		}
-
-		main{
-			width: auto;
-		}
-
-		body{
-			background-color: white;
-		}
-
-		.menu .social {
-  	width: auto;
-  	padding-left: 110px;
-	}
-
-		article{
-			margin-bottom: 50px;
-		}
-
-		.footer ul{
-			padding-left: 30px;
-		}
-
-
-
-
-
-
-
-
 }
