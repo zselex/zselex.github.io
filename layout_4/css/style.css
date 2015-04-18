@@ -1,3 +1,30 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
 body{
   font-family: opensans;
   background-color: white;
@@ -5,24 +32,24 @@ body{
 
 /*WRAPPER*/
 .wrapper{
-  
+
 }
 
 /*HEADER*/
 
-header{
+.header{
   background-color: #F26D7D;
   height: 50px;
 
 }
 
-header img{
+/*header img{
   margin: 0px auto;
   width: 229px;
   height: 29px;
   display: block;
-  padding-top: 13px;
-}
+  padding-top: 13px;}*/
+
 .logo{
   background-image: src="../images/layout3-mobil.png"
 }
@@ -30,6 +57,7 @@ header img{
 .content{
   /*dev*/ min-height: 200px;
   background-color: rgba(0, 255, 0, .1)
+
 
 
 }
@@ -45,9 +73,18 @@ header img{
   heigh: 85px;
 }
 
+
+/*COMMON ELEMENTS*/
+
+.clearfix{
+
+}
+
+
 @media screen and (min-width: 978px){
   .header{
     background: none;
+    height: 195px;
     }
 
   .wrapper{
@@ -55,6 +92,29 @@ header img{
     width: 978px
   }
 
+  .content{
+    float: left;
+    width: 602px;
+  }
 
+  .sidebar{
+    float:right;
+    width: 286px;
+
+  }
+  .columns{
+    background-color: #fff;
+    padding: 30px;
+  }
+
+  .columns:after {
+
+  }
+
+  .footer{
+    height: auto;
+    heigh: 55px;
+    margin: 30px 0;
+  }
 
 }
