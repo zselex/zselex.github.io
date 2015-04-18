@@ -3,6 +3,11 @@ body{
   background-color: white;
 }
 
+/*WRAPPER*/
+.wrapper{
+  
+}
+
 /*HEADER*/
 
 header{
@@ -40,8 +45,15 @@ header img{
   heigh: 85px;
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 978px){
+  .header{
+    background: none;
+    }
 
+  .wrapper{
+    margin: 0 auto;
+    width: 978px
+  }
 
 
 
