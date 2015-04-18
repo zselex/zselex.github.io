@@ -38,8 +38,7 @@ body{
 /*HEADER*/
 
 .header{
-  background-color: #F26D7D;
-  height: 50px;
+
 
 }
 
@@ -51,15 +50,47 @@ body{
   padding-top: 13px;}*/
 
 .logo{
-  background-image: src="../images/layout3-mobil.png"
+  margin: 0;
+  background-color: #F26D7D;
+
+}
+
+.logo a{
+  background-image:url("../images/logo.jpg");
+  background-repeat: no-repeat;
+  display:BLOCK;
+  height: 50px;
+  white-space:nowrap;
+  width: 260px;
+  overflow: hidden;
+  text-indent: 150%;
+  margin: 0 auto;
+
+}
+
+.phone{
+  height: 35px;
+  margin: 15px 20px;
+  /*dev*/ background-color: rgba(0, 255, 0, .1);
+  /*dev*/ min-height: 30px;
 }
 
 .content{
   /*dev*/ min-height: 200px;
   background-color: rgba(0, 255, 0, .1)
+}
 
+.menu{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 50px;
+  width: 50px;
+  background-color: purple;
+}
 
-
+.facebook{
+  display: none;
 }
 
 .sidebar{
@@ -84,8 +115,30 @@ body{
 @media screen and (min-width: 978px){
   .header{
     background: none;
-    height: 195px;
+    height: 195px
     }
+
+    .logo{
+    background: none;
+    margin: 20px 0 30px;
+    width: 470px;
+    padding: 20px;
+    float: left;
+    }
+
+  .logo a{
+    background-image:url("../images/layout3-toll.png");
+    background-repeat: no-repeat;
+    width: 470px;
+    height: 58px;
+
+  }
+
+
+
+  .phone{
+    float: right;
+  }
 
   .wrapper{
     margin: 0 auto;
