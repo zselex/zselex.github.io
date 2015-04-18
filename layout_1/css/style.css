@@ -282,7 +282,11 @@ aside p{
 }
 
 
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> e390e7d28ecb75e215ab186a90963404be6e69d1
 @media (max-width: 960px){
 	  aside {
 	    display: none;
@@ -328,4 +332,8 @@ aside p{
 
 
 
+<<<<<<< HEAD
 }*/
+=======
+}
+>>>>>>> e390e7d28ecb75e215ab186a90963404be6e69d1
