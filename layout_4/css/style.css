@@ -24,10 +24,14 @@
 .clearfix {
     *zoom: 1;
 }
+html{
+  font-size:62.5%
+}
 
 body{
-  font-family: opensans;
+  font: 1.5em/1.5 "Open Sans", arial;
   background-color: white;
+
 }
 
 /*WRAPPER*/
@@ -69,11 +73,28 @@ body{
 }
 
 .phone{
-  height: 35px;
-  margin: 15px 20px;
-  /*dev*/ background-color: rgba(0, 255, 0, .1);
-  /*dev*/ min-height: 30px;
+  height: 43px;
+  line-height: 43px;
+  border: 1px solid #F37685;
+  border-radius: 10px;
+  width: 300px;
+  background-color: white;
+  margin:10px auto;
+  font-size: 90%;
+  text-align: center;
 }
+
+.phone a{
+  color: #007236;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+/*MENU*/
+
+
 
 .content{
   /*dev*/ min-height: 200px;
@@ -84,8 +105,7 @@ body{
   position: absolute;
   right: 0px;
   top: 0px;
-  height: 50px;
-  width: 50px;
+
   background-color: purple;
 }
 
@@ -113,6 +133,10 @@ body{
 
 
 @media screen and (min-width: 978px){
+  body{
+    background-image:url("../images/upfeathers.png");
+  }
+
   .header{
     background: none;
     height: 195px
@@ -134,11 +158,42 @@ body{
 
   }
 
+  .menu{
+    height: 50px;
+    min-width:200px;
+    float: left;
+    clear: both;
+    width: auto;
+    position: static;
+    background-color: rgba(11, 211, 0, .3);
+  }
+  .facebook{
+    display: block;
+    float: right;
+    margin: 0;
+    background-color: rgba(11, 211, 0, .3);
+    height: 40px;
+    width: 200px;
 
+  }
 
   .phone{
     float: right;
+    margin-top:25px;
+    width: 175px;
+    line-height: 1.1;
+    height: auto;
+    padding: 7px 0;
   }
+
+  .phone a{
+    font-size: 1.5em;
+    white-space: nowrap;
+    font-style: italic;
+
+  }
+
+
 
   .wrapper{
     margin: 0 auto;
