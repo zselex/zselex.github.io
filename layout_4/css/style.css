@@ -1,6 +1,9 @@
 body{
   font-family: opensans;
+  background-color: white;
 }
+
+/*HEADER*/
 
 header{
   background-color: #F26D7D;
@@ -15,8 +18,31 @@ header img{
   display: block;
   padding-top: 13px;
 }
-header p{
-  font-size: 20px;
-  float: left;
-  display: none;
+.logo{
+  background-image: src="../images/layout3-mobil.png"
+}
+
+.content{
+  /*dev*/ min-height: 200px;
+  background-color: rgba(0, 255, 0, .1)
+
+
+}
+
+.sidebar{
+  /*dev*/ min-height: 200px;
+  background-color: rgba(255, 0, 0, .1)
+
+}
+
+.footer{
+  background-color: #F8B6BE;
+  heigh: 85px;
+}
+
+@media screen and (min-width: 769px){
+
+
+
+
 }
