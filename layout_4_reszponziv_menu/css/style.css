@@ -1,0 +1,314 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+html{
+  font-size:62.5%
+}
+
+body{
+  font: 1.5em/1.5 "Open Sans", arial;
+  background-color: white;
+
+}
+
+/*WRAPPER*/
+.wrapper{
+
+}
+
+/*HEADER*/
+
+.header{
+  background-color:#F26D7D;
+  padding-bottom: 10px;
+}
+
+/*header img{
+  margin: 0px auto;
+  width: 229px;
+  height: 29px;
+  display: block;
+  padding-top: 13px;}*/
+
+.logo{
+  margin: 0;
+  background-color: #F26D7D;
+
+}
+
+.logo a{
+  background-image:url("../images/logo.jpg");
+  background-repeat: no-repeat;
+  display: block;
+  height: 50px;
+  white-space:nowrap;
+  width: 260px;
+  overflow: hidden;
+  text-indent: 150%;
+  margin: 0 auto;
+  z-index: 100;
+  position:relative;
+
+}
+
+.phone{
+  height: 43px;
+  line-height: 43px;
+  border: 1px solid #F37685;
+  border-radius: 10px;
+  width: 300px;
+  background-color: white;
+  margin:10px auto;
+  font-size: 90%;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+
+}
+
+.phone a{
+  color: #007236;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+/*MENU*/
+
+
+
+.content{
+  /*dev*/ min-height: 200px;
+  background-color: rgba(0, 255, 0, .1)
+}
+
+.menu{
+  position: relative;
+  width:auto;
+  top:0;
+  }
+
+.menu .toggle{
+  width: 50px;
+  height: 50px;
+  padding-left: 0px;
+  background-color: purple;
+  top: -115px;
+  position: absolute;
+  right: 0;
+  }
+
+.menu a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.menu ul{
+  background-color:#F26D7D;
+  line-height: 2;
+  font-size: 24px;
+  display: none;
+  margin-bottom: 125px;
+}
+
+#nav:target .menu ul{
+  display: block;
+}
+
+
+.menu .close{
+  display: none;
+}
+
+#nav:target .menu .close{
+  display: block;
+}
+
+.menu li{
+  border-top: solid 1px #F5929E;
+}
+
+.facebook{
+  display: none;
+}
+
+.sidebar{
+  /*dev*/ min-height: 200px;
+  background-color: rgba(255, 0, 0, .1)
+
+}
+
+.footer{
+  background-color: #F8B6BE;
+  heigh: 85px;
+}
+
+
+/*COMMON ELEMENTS*/
+
+.clearfix{
+
+}
+
+
+@media screen and (min-width: 978px){
+  body{
+    background-image:url("../images/upfeathers.png");
+  }
+
+  .header{
+    background: none;
+    height: 195px
+    }
+
+    .logo{
+    background: none;
+    margin: 20px 0 30px;
+    width: 470px;
+    padding: 20px;
+    float: left;
+    }
+
+  .logo a{
+    background-image:url("../images/layout3-toll.png");
+    background-repeat: no-repeat;
+    width: 470px;
+    height: 58px;
+
+  }
+  .menu .toggle{
+  display: none;
+  width: 200px;
+  background-color:#F26D7D;
+
+  }
+
+  .menu{
+    height: 50px;
+    min-width:200px;
+    float: left;
+    clear: both;
+    width: auto;
+    position: static;
+
+  }
+
+  .menu ul{
+    display: block;
+  }
+
+
+  .menu li{
+    float: left;
+    margin-right: 18px;
+    background-color: #F26D7D;
+    border-bottom: 7px solid rgb(0,0,0);
+    border-bottom: 7px solid rgba(0,0,0,.2);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+
+
+  }
+
+  .menu a{
+    padding: 3px 11px;
+    font-size: 18px;
+
+  }
+
+  #nav:target .header{
+    background: none;
+  }
+
+  #nav:target .menu .close{
+    display: none;
+  }
+
+  .facebook{
+    display: block;
+    float: right;
+    margin: 0;
+    background-color: rgba(11, 211, 0, .3);
+    height: 40px;
+    width: 200px;
+
+
+
+  }
+
+  .phone{
+    float: right;
+    margin-top:25px;
+    width: 175px;
+    line-height: 1.1;
+    height: auto;
+    padding: 7px 0;
+  }
+
+  .phone a{
+    font-size: 1.5em;
+    white-space: nowrap;
+    font-style: italic;
+
+  }
+
+
+
+  .wrapper{
+    margin: 0 auto;
+    width: 978px
+  }
+
+  .content{
+    float: left;
+    width: 602px;
+  }
+
+  .sidebar{
+    float:right;
+    width: 286px;
+
+  }
+  .columns{
+    background-color: #fff;
+    padding: 30px;
+  }
+
+  .columns:after {
+
+  }
+
+  .footer{
+    height: auto;
+    heigh: 55px;
+    margin: 30px 0;
+  }
+
+}

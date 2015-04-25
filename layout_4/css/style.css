@@ -42,8 +42,8 @@ body{
 /*HEADER*/
 
 .header{
-
-
+  background-color:#F26D7D;
+  padding-bottom: 10px;
 }
 
 /*header img{
@@ -62,13 +62,15 @@ body{
 .logo a{
   background-image:url("../images/logo.jpg");
   background-repeat: no-repeat;
-  display:BLOCK;
+  display: block;
   height: 50px;
   white-space:nowrap;
   width: 260px;
   overflow: hidden;
   text-indent: 150%;
   margin: 0 auto;
+  z-index: 100;
+  position:relative;
 
 }
 
@@ -82,6 +84,9 @@ body{
   margin:10px auto;
   font-size: 90%;
   text-align: center;
+  position: relative;
+  z-index: 100;
+
 }
 
 .phone a{
@@ -102,11 +107,51 @@ body{
 }
 
 .menu{
+  /*dev*/ background-color: purple;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  width:auto;
+  height: 50px;
+  top:0;
+  }
 
+.menu .toggle{
+  width: 50px;
+  height: 50px;
   background-color: purple;
+  top: 0;
+  right: 0;
+  }
+
+.menu a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.menu ul{
+  background-color:#F26D7D;
+  line-height: 2;
+  font-size: 24px;
+  display: none;
+  margin-bottom: 125px;
+}
+
+#nav:target .menu ul{
+  display: block;
+}
+
+
+.menu .close{
+  display: none;
+}
+
+#nav:target .menu .close{
+  display: block;
+}
+
+.menu li{
+  border-top: solid 1px #F5929E;
 }
 
 .facebook{
@@ -157,6 +202,12 @@ body{
     height: 58px;
 
   }
+  .menu .toggle{
+  display: none;
+  width: 200px;
+  background-color:#F26D7D;
+
+  }
 
   .menu{
     height: 50px;
@@ -165,8 +216,27 @@ body{
     clear: both;
     width: auto;
     position: static;
-    background-color: rgba(11, 211, 0, .3);
+    background-color:#F26D7D;
+
   }
+
+  .menu ul{
+    display: block;
+  }
+
+  .menu li{
+    float: left;
+    margin-right: 40px;
+  }
+
+  #nav:target .header{
+    background: none;
+  }
+
+  #nav:target .menu .close{
+    display: none;
+  }
+
   .facebook{
     display: block;
     float: right;
