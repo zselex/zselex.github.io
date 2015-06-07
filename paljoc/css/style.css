@@ -516,8 +516,9 @@ body {
   #welcome .godown{
     width: 300px;
     text-align: center;
-    left: 0;
-    margin-left: 0;
+    left: 50%;
+    margin-left: -150px;
+    bottom: 25%;
   }
 
   #coffee .items .item{
@@ -549,9 +550,10 @@ body {
     position: absolute;
     width: 160px;
     height: 40px;
-    top:-1px;
+    top:0px;
     left: 160px;
     display: block;
+    border: none;
   }
 
   #coffee .item p{
