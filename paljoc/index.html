@@ -18,15 +18,11 @@
    new WOW().init();
   </script>
 
-  <script type="text/javascript">
-  jQuery(document).ready(function($) {
+<!-- SCROLL -->
 
- 	$(".scroll").click(function(event){
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1300);
-	});
-});
-  </script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery.anchor.js" type="text/javascript"></script>
+
 
   <!-- REMOVE SCROLL ON MOBILE -->
 
@@ -41,9 +37,9 @@
       <nav class="container">
         <a href="#welcome"><div class="logo">PallYotz cofee</div></a>
         <ul id="nav">
-          <li href="#coffee" class="menu-coffee"><a href="#coffee" class="scroll">.kávék.</a></li>
-          <li class="menu-about"><a href="#about" class="scroll">.bemutatkozás.</a></li>
-          <li class="menu-order"><a href="#order" class="scroll">.vásárlás.</a></li>
+          <li class="menu-coffee"><a href="#coffee" class="anchorLink">.kávék.</a></li>
+          <li class="menu-about"><a href="#about" class="anchorLink">.bemutatkozás.</a></li>
+          <li class="menu-order"><a href="#order" class="anchorLink">.vásárlás.</a></li>
         </ul>
         <a href="#nav-menu" class="toggle">
           <span></span>
@@ -62,7 +58,7 @@
               <span>Friss kávé egyensen a pörkölőtől.</span><br>
               Görgess a részletekért!
           </p>
-          <div class="arrow bounce"><a href="#coffee" class="scroll">Görgess!</a></div>
+          <div class="arrow bounce"><a href="#coffee" class="anchorLink">Görgess!</a></div>
         </div>
       </article>
     </section>
@@ -80,7 +76,7 @@
 
       <ul class="items cf">
 
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -88,7 +84,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -96,7 +92,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -104,7 +100,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -112,7 +108,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -120,7 +116,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -128,7 +124,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -151,7 +147,7 @@
 
       <ul class="items cf">
 
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -159,7 +155,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -167,7 +163,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -175,7 +171,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -183,7 +179,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -191,7 +187,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -199,7 +195,7 @@
           <h3 class="price"> 2000 Ft / 50g</h3>
           </a>
         </li>
-        <li class="item" ><a href="#order" class="scroll">
+        <li class="item" ><a href="#order" class="anchorLink">
           <h3>Choco Madness</h3>
           <p>
             100% arabica // csokis ízvilág, presszókávéhoz ajánljuk, stb..csokis ízvilág, presszó kávéhoz ajánljuk, stb..
@@ -259,5 +255,12 @@
         </div>
       </article>
     </section>
+
+    <script type="text/javascript">
+  $(document).ready(function() {
+    $("a.anchorLink").anchorAnimate();
+  });
+</script>
+
   </body>
 </html>
