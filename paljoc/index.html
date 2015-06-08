@@ -11,6 +11,8 @@
 
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
 
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
   <script src="js/wow.min.js"></script>
   <script>
    new WOW().init();
@@ -26,17 +28,29 @@
 });
   </script>
 
+  <!-- REMOVE SCROLL ON MOBILE -->
+
+
+
+
 </head>
-  <body>
+
+  <body id="nav-menu">
 
     <header class="menu">
       <nav class="container">
         <a href="#welcome"><div class="logo">PallYotz cofee</div></a>
         <ul id="nav">
-          <li><a href="#coffee" class="scroll">.kávék.</a></li>
-          <li><a href="#about" class="scroll">.bemutatkozás.</a></li>
-          <li><a href="#order" class="scroll">.vásárlás.</a></li>
+          <li href="#coffee" class="menu-coffee"><a href="#coffee" class="scroll">.kávék.</a></li>
+          <li class="menu-about"><a href="#about" class="scroll">.bemutatkozás.</a></li>
+          <li class="menu-order"><a href="#order" class="scroll">.vásárlás.</a></li>
         </ul>
+        <a href="#nav-menu" class="toggle">
+          <span></span>
+        </a>
+        <a href="#welcome" class="close toggle">
+          <span></span>
+        </a>
       </nav>
     </header>
 

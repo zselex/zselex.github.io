@@ -91,6 +91,11 @@ html, body {
   color: #AB3F00;
 }
 
+.toggle,
+.close{
+  display: none;
+}
+
 /*W E L C O M E*/
 
 #welcome{
@@ -496,16 +501,143 @@ body {
 
 @media only screen and (max-width: 500px){
 
-  .menu{
-  display: none;
+  .menu .logo{
+    float: none;
+    margin: 0 auto;
   }
+
+  #nav{
+    display: none;
+  }
+
+  .menu .toggle.close {
+      display: none;
+  }
+
+  .menu .toggle{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 200;
+    color: #281302;
+    font-size: 45px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+  .menu .toggle span{
+    top: 15px;
+    left: 10px;
+
+  }
+
+  .menu .toggle span:before{
+    top: 10px;
+  }
+  .menu .toggle span:after{
+    top: 20px;
+  }
+
+  .menu .toggle span,
+  .menu .toggle span:after,
+  .menu .toggle span:before{
+    display: block;
+    cursor: pointer;
+    border-radius: 1px;
+    height: 4px;
+    width: 30px;
+    background: #281302;
+    content: '';
+    position: absolute;
+  }
+
+  .menu .toggle.close span,
+  .menu .toggle.close span:after,
+  .menu .toggle.close span:before{
+    background: #D8BBA2;
+  }
+
+  #nav-menu:target .menu .container{
+    display: block;
+    width: 100%;
+    height: 75%;
+    padding-top: 50px;
+    }
+
+  #nav-menu:target #nav{
+    display: block;
+    }
+
+  #nav-menu:target .menu .toggle.close{
+    display: block;
+    }
+
+  #nav-menu:target .toggle{
+    display: none;
+  	}
+
+  #welcome:target #nav{
+    display: none;
+  }
+
+  #nav-menu:target .menu{
+    background: black;
+    opacity: .95;
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  #nav-menu:target .menu .logo{
+    background-image: none;
+  }
+
+  #nav-menu:target .menu ul#nav{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+
+  }
+
+
+  #nav-menu:target .menu #nav li{
+    float: none;
+    display: block;
+  	height: 33%;
+  	height: calc(100% / 3);
+  	min-height: 60px;
+    margin-left: 0;
+  }
+
+
+  #nav-menu:target #nav li a{
+    color: #D8BBA2;
+    font-size: 36px;
+    font-weight: 300;
+    display: block;
+    text-decoration:none;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  /*#nav-menu #nav .menu-coffee a:focus #nav{
+    position: absolute;
+    left: -1000px;
+  }*/
+
 
 
   #welcome{
     background: url(../images/welcome_back_3.jpg) center center, no-repeat;
     width: 100%;
     max-height: 750px;
-
   }
 
   #welcome .container p {
@@ -565,9 +697,9 @@ body {
     top: 40px;
     right: 0;
     text-align: left;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.4;
-    padding: 15px 10px 10px 15px;;
+    padding: 10px 10px 10px 15px;;
     background-color: #703e15;
   }
 
