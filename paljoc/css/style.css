@@ -219,7 +219,7 @@ body {
 #coffee .item{
   background: url(../images/item_pic_choco.jpg) 0 0, no-repeat;
   background-position: bottom;
-  height: 250px;
+  height: 270px;
   width: 200px;
   background-color: black;
   float:left;
@@ -256,10 +256,10 @@ body {
   text-align: center;
   font-family: 'Noticia Text', serif;
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.4;
   padding: 9px;
-  height: 167px;
+  height: 180px;
   display: none;
 
 }
@@ -694,12 +694,12 @@ body {
     box-sizing: border-box;
     display: block;
     width: 320px;
-    height: 138px;
+    height: 150px;
     position: absolute;
     top: 40px;
     right: 0;
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.4;
     padding: 15px 15px 15px 15px;;
     background-color: #703e15;
