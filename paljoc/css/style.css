@@ -228,6 +228,11 @@ body {
   position: relative;
 }
 
+#coffee .item.yirga{
+  background: url(../images/item_pic_yirga.jpg) 0 0, no-repeat;
+  background-position: bottom;
+}
+
 #coffee .items .item:nth-child(4n+4){
   margin-right: 0;
 }
